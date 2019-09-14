@@ -23,7 +23,7 @@ class mywindow(QtWidgets.QWidget, Ui_Form):
         table = data.sheets()[0]#选定表
         nrows = table.nrows#获取行号
     
-        for i in range(0, nrows):
+        for i in range(1, nrows):
             alldata = table.row_values(i)#循环输出excel表中每一行，即所有数据
             name_column = int(self.comboBox.currentText())-1
             tele_column = int(self.comboBox_2.currentText())-1
